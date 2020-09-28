@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   #class variable(s)
   @@count = 0   # # of instances of Song
