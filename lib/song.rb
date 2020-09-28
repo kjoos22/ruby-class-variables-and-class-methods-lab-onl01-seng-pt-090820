@@ -24,8 +24,14 @@ class Song
     @@count
   end
   
-  def self.genres   #returns @@genres, array of existing genres
-    @@genres
+  def self.genres    #returns aray of unique existing artists
+    genres = []
+    @@genres.each do |genre|
+      if !genres.include?(genre)
+        genres << genre
+      end
+    end
+    artists
   end
   
   def self.artists    #returns aray of unique existing artists
