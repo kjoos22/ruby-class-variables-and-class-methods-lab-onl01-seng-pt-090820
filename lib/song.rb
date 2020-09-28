@@ -12,11 +12,14 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
+    if !array.include(genre)
+      @@genres << genre
   end
   
   #class method(s)
   def self.count    #returns @@count, the # of instances of Song
     @@count
   end
+  
   
 end
