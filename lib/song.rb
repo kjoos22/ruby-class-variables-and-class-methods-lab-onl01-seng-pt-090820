@@ -12,8 +12,10 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-    if !array.include(genre)
-      @@genres << genre
+    if !@@genres.include?(genre)    #if new, add genre to @@genres
+      @@genres << genres
+    end
+    if !
   end
   
   #class method(s)
