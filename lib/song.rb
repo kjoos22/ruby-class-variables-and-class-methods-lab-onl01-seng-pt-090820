@@ -54,5 +54,14 @@ class Song
     genre_count
   end
   
+  def self.artist_count    #returns hash where k = artist and v = # of tracks
+    artist_count = {}
+    @@artists.each do |artist|
+      if artist_count[artist] == nil
+        artist_count[artist] = @@artists.count(artist)
+      end
+    end
+    artist_count
+  end
   
 end
