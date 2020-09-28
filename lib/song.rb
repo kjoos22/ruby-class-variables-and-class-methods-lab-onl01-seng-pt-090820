@@ -1,4 +1,7 @@
 class Song
+  #class variables
+  @@count = 0   #tracks the number of instances of Song
+  
   #instance variables
   attr_accessor :name, :artist, :genre
   
@@ -7,6 +10,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
+    @@count += 1
   end
   
 end
