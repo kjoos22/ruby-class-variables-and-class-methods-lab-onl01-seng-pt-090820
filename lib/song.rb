@@ -1,6 +1,6 @@
 class Song
   #class variable(s)
-  @@count = 0   #tracks the number of instances of Song
+  @@count = 0   # # of instances of Song
   
   #instance variables
   attr_accessor :name, :artist, :genre
@@ -14,7 +14,7 @@ class Song
   end
   
   #class method(s)
-  def self.count    #returns @@count, the total number of instances of Song
+  def self.count    #returns @@count, the # of instances of Song
     @@count
   end
   
