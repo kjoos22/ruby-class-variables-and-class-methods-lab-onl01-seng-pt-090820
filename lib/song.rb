@@ -47,6 +47,9 @@ class Song
   def self.genre_count    #returns hash where k = genre and v = # of tracks
     genre_count = {}
     genres.each do |genre|
-      
+      if genre_count[genre] == nil
+        genre_count[genre] = 1
+      else
+        genre_count[genre] != 1
   end
 end
