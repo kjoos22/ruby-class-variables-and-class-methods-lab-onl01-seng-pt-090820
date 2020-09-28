@@ -28,8 +28,12 @@ class Song
     @@genres
   end
   
-  def self.artists    #returns @@artists, array of existing artists
-    @@artists
+  def self.artists    #returns aray of unique existing artists
+    artists = []
+    @@artists.each do |artist|
+      if !artists.include?(artist)
+        artists << artist
+      end
   end
   
   
