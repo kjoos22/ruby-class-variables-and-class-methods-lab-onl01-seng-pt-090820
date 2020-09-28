@@ -25,5 +25,13 @@ class Song
     @@count
   end
   
+  def self.genres   #returns @@genres, array of existing genres
+    @@genres
+  end
+  
+  def self.artists    #returns @@artists, array of existing artists
+    @@artists
+  end
+  
   
 end
