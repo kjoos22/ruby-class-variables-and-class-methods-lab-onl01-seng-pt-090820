@@ -14,6 +14,7 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
+    binding.pry
     if !@@genres.include?(genre)    #if new, add genre to @@genres
       @@genres << genre
     end
