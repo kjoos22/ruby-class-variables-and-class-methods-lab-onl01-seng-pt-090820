@@ -52,6 +52,7 @@ class Song
       else
         binding.pry
         genre_count[genre] += 1
+        binding.pry
       end
     end
     genre_count
