@@ -34,6 +34,7 @@ class Song
       if !artists.include?(artist)
         artists << artist
       end
+    end
     artists
   end
   
