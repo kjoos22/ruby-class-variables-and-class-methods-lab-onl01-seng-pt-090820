@@ -44,5 +44,9 @@ class Song
     artists
   end
   
-  
+  def self.genre_count    #returns hash where k = genre and v = # of tracks
+    genre_count = {}
+    genres.each do |genre|
+      
+  end
 end
