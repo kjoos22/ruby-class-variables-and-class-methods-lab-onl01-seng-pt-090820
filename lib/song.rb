@@ -18,7 +18,7 @@ class Song
     if !@@genres.include?(genre)    #if new, add genre to @@genres
       @@genres << genre
     end
-    if !@@artists.include?(artist)    #if new, add artist to @@artists
+    if @@artists.include?(artist) == false    #if new, add artist to @@artists
       @@artists << artist
     end
   end
