@@ -31,7 +31,7 @@ class Song
         genres << genre
       end
     end
-    artists
+    genres
   end
   
   def self.artists    #returns aray of unique existing artists
